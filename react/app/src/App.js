@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Ccomponents from './Components/Ccomponents';
+// import Ccomponents from './Components/Ccomponents';
+import Funct from './Components/Funct';
 
 class App extends Component {
   render() {
@@ -15,7 +16,8 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <Ccomponents />
+        {Funct('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')}
+        {/* {console.log(<Funct />)} */}
 
       </div>
     );

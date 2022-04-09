@@ -26,3 +26,9 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+.coct{
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  border:2px solid black;
+}
