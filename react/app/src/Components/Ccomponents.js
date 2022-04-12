@@ -46,7 +46,7 @@ componentDidMount(){
         <ul>
           {items.map((item, index) => {
            return (
-           <li key={index}>
+           <li key={item.idDrink}>
              {item.strDrink}
               <img border="2px solid black" width='50' height='50' alt={item.name} src={item.strDrinkThumb}></img>
 

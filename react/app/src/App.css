@@ -32,3 +32,15 @@
   margin: auto;
   border:2px solid black;
 }
+
+.drinks{
+  display: flex;
+  background-color: rgb(4, 0, 255);
+  justify-content: center;
+  padding: 25px;
+  /* width: 600px */
+}
+
+.appx{
+  border: #222 solid 2px;
+}
