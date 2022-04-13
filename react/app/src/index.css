@@ -2,4 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-image: url(https://crystal-design.com.ua/wp-content/uploads/2019/09/55-1024x682.jpg);
+  background-attachment:fixed;
+  background-size: cover;
 }
