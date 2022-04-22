@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-
+// import Funct from './Funct'
 const styles = {
   border:'3px solid white',
   color: "white",
@@ -22,6 +22,7 @@ export default function Functions() {
         setIsLoading(false);
         setIsLoading(false)
       }
+
       useEffect(() =>{
         getData()
       },[])
@@ -67,6 +68,7 @@ export default function Functions() {
       setTestSecond(true)
       return (drinks);
     }
+
     const FunctionReset = () =>{
       getData()
       document.querySelector('.second').classList.remove('activeS', 'activeF')
@@ -83,12 +85,8 @@ export default function Functions() {
         setItems(Math.floor((items+1)))
         setTestSecond(false)
     }
-
   })
 
-    
-
-    
     return (
       <div>
       {isLoaded && <p style={{color:'white'}}>Loading,,,</p>}
@@ -100,13 +98,16 @@ export default function Functions() {
           <td className='appx second' onClick={FunctionSortSecond}>Код</td>
           <td className='appx' >Фото</td>
         </tr>
-        {drinks.map(i => <tr key={i.idDrink}>
+          
+        {drinks.map((i,index) => <tr key={i.idDrink}>
           <td style={styles}>{i.strDrink}</td> 
           <td style={styles} color="red">{i.idDrink}</td>
           <td style={styles} color="red"><img height='50px' width='50px' src={i.strDrinkThumb} alt={i.idDrink} /></td>
         </tr>
          ) }
-        
+      <tr>
+        {/* <td><Funct /></td> */}
+      </tr>
 
         </tbody>
 
