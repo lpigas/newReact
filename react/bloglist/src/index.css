@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App{
+  display: flexbox;
+  width: 100%;
+  min-width: 800px;
+}
+
+.Bodypost{
+  display: flex;
+  justify-content: space-between;
+}
+.new__blog{
+  display: flex;
+  justify-content: center;
+  border: 2px solid #1234;
+  margin: 15px;
+  padding: 5px;
+  border-radius: 15px;
+}
+.none{
+  display: none;
+}

@@ -23,7 +23,7 @@ function App () {
     setPosts([...posts,...data])
   }
   
-  const removePost = (post) =>{
+  const removePost = post =>{
     setPosts(posts.filter(p=> p.id !== post.id))
   }
 
@@ -51,7 +51,7 @@ function App () {
 
 
         {findPost.length === 0
-          ? <h1 className='noAnyTodos'>No any todos</h1>
+          ? <h1 className='noAnyTodos'>No any Posts</h1>
           :<Postlist remove={removePost} value={findPost} titels='To Do List'/>
         }
         
