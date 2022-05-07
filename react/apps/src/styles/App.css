@@ -14,11 +14,12 @@
 .post{
     display: flex;
     padding: 15px;
-    margin-top: 15px;
+    margin: 15px;
     border: 2px solid green;
     justify-content: space-between;
     align-items: center;
     background-color: aquamarine;
+    border-radius: 10px;
 }
 .form{
     display: flexbox;
@@ -31,3 +32,33 @@
     display: flex;
     justify-content: center;
 }
+.topButton{
+    display: flex;
+    padding: 5px;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.post-enter {
+    opacity: 0.5;
+    transform: translateX(250px);
+    transition: all 500ms cubic-bezier(0,0,1,1);
+    transition-timing-function: linear;
+  }
+  .post-enter-active {
+    transform: translateX(0px);
+    transition: all 500ms cubic-bezier(0,0,1,1);
+    transition-timing-function: linear;
+  }
+  .post-exit {
+    opacity: 0.51;
+    
+    background-color: red;
+  }
+  .post-exit-active {
+    transform: translateX(-250px);
+    transition: all 500ms ease-out;
+  }
+  
+  

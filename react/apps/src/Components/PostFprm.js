@@ -23,7 +23,7 @@ export default function PostFprm({create, value}) {
             placeholder='Input post' 
             onChange={e => setPost({...post, body: e.target.value})}/>
           <MyButton  onClick={addpost} type='button'>
-            Add ToDo
+            Add new Post
           </MyButton>
         </form>
   )

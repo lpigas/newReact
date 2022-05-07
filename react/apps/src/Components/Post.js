@@ -1,6 +1,6 @@
 import React from 'react'
 import MyButton from './UI/button/MyButton'
-import MyCheckbox from './UI/Input/MyCheckbox.jsx';
+
 
 
 export default function Post(props) {
@@ -14,8 +14,14 @@ export default function Post(props) {
             </div>
           </div>
           <div className='post__bts'>
-            <MyCheckbox />
+            <div>
+            <MyButton onClick={() => props.changePost(props.value)}> Change</MyButton>
+            </div>
+            <div>
             <MyButton onClick={() => props.remove(props.value)}> Delete</MyButton>
+            </div>
+            
+            
           </div>
         </div>
   )
